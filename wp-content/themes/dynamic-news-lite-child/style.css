@@ -13,7 +13,7 @@
 */
 
 @import url("../dynamic-news-lite/style.css");
- 
+
 /* =Theme customization starts here
 ------------------------------------------------------- */
 .genericon-facebook{
@@ -32,3 +32,21 @@
     font-size: 32px!important;
 }
 
+@font-face {
+    font-family: 'Pridi-Light';
+    src: url('./fonts/Pridi-Light.eot');
+    src: url('./fonts/Pridi-Light.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Pridi-Light.woff2') format('woff2'),
+         url('./fonts/Pridi-Light.woff') format('woff'),
+         url('./fonts/Pridi-Light.ttf') format('truetype');
+}
+
+body,
+input,
+textarea,
+.page-title,
+.entry-title,
+#mainnav-menu a,
+#logo .site-title{
+    font-family: 'Pridi-Light';
+}
