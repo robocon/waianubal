@@ -246,3 +246,9 @@ function wb_staticmap_key_callback() {
     </div>
     <?php
 }
+
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+function modify_read_more_link() {
+    global $post;
+    return '<div style="text-align: right;"><a class="more-link" href="' . get_permalink() . '#more-'.$post->ID.'">อ่านต่อ</a></div>';
+}
